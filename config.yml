@@ -1,0 +1,4 @@
+main_game:
+  board_size: 4
+  number_of_games: 5000
+  training_step_test: [100, 1000, 5000, 10000, 20000, 100000]
