@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import os
 
 from TicTacToeBoard import TicTacToeBoard
-from BasePlayer import BasePlayer
-from QLearning import RLAgentQLearning
+from TrainStrategy.BasePlayer import BasePlayer
+from TrainStrategy.QLearning import RLAgentQLearning
 from Game import *
 
 board_size = 4
@@ -17,18 +17,8 @@ training_step_test = [100, 1000, 5000, 10000, 20000, 100000]
 episodes = np.max(np.array(training_step_test))
 
 
-"""## Game"""
-"""## RL Agent"""
-
-"""## Random opponent"""
-
-"""# Main"""
-
 rl_agent = RLAgentQLearning("QLearning".format(training_step_test[-1]), "blue", board_size)
 
-#rl_agent.train(num_episodes=100, save_episodes=0,
-               #save_step=training_step_test,
-#               debug=True)
 
 random_opp = BasePlayer("Random", "red", board_size)
 

@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 from TicTacToeBoard import TicTacToeBoard
 from constants import *
-from BasePlayer import BasePlayer
-from QLearning import RLAgentQLearning
+from TrainStrategy.BasePlayer import BasePlayer
+from TrainStrategy.QLearning import RLAgentQLearning
 
 def plot_win_rate(agent_1_wins, agent_2_wins, draw, agent_1, agent_2, board_size, save_fig_path=None):
     values = np.array([agent_1_wins, agent_2_wins, draw])

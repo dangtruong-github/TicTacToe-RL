@@ -3,7 +3,7 @@ import pickle
 import os
 import copy
 
-from BasePlayer import BasePlayer
+from TrainStrategy.BasePlayer import BasePlayer
 from TicTacToeBoard import TicTacToeBoard
 from constants import *
 
