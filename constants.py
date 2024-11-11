@@ -1,8 +1,0 @@
-X_WIN = 1
-O_WIN = -1
-DRAW = 0
-UNFINISHED = 2
-
-X_TILE = 1
-O_TILE = -1
-EMPTY_TILE = 0
